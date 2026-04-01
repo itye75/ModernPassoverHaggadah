@@ -1,2 +1,0 @@
-# ModernPassoverHaggadah
-interactive Passover Haggadah

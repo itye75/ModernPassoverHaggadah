@@ -1,0 +1,77 @@
+:root {
+    --wine-red: #8e1c1c;
+    --paper-bg: #fdfaf6;
+}
+body {
+    font-family: 'Assistant', sans-serif;
+    background-color: var(--paper-bg);
+    color: #2d3436;
+    scroll-behavior: smooth;
+}
+.haggadah-font {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.page-content {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+.page-content.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.quote-block {
+    border-right: 4px solid var(--wine-red);
+    padding-right: 1.5rem;
+    background: rgba(142, 28, 28, 0.03);
+    margin: 1.5rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+.wine-box {
+    background-color: #f8eeee;
+    border: 1px solid #e0d7c6;
+    border-right: 5px solid var(--wine-red);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+}
+.story-box {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+    margin: 1.5rem 0;
+}
+.btn-youtube {
+    background-color: #ff0000;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+.btn-youtube:hover {
+    background-color: #cc0000;
+    transform: scale(1.03);
+}
+.progress-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    transition: all 0.3s;
+}
+.progress-dot.active {
+    background-color: var(--wine-red);
+    transform: scale(1.3);
+}
