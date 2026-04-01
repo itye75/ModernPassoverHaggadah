@@ -14,7 +14,7 @@
     <header class="w-full max-w-3xl flex justify-between items-center mb-8">
         <h1 class="haggadah-font text-3xl font-bold text-red-900">הגדה פסח מודרנית</h1>
         <div class="bg-white px-4 py-1 rounded-full border shadow-sm text-sm font-bold text-gray-500">
-            עמוד <span id="pageNumberDisplay">1</span> מתוך 7
+            עמוד <span id="pageNumberDisplay">1</span> מתוך 8
         </div>
     </header>
 
@@ -152,6 +152,18 @@
                 </div>
             </div>
 
+        </div>
+
+        <!-- Page 4: Bagel -->
+        <div id="page4" class="page-content">
+            <div class="flex justify-center mb-6">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" stroke="#f39c12" stroke-width="4" fill="#fff8e1"/>
+                    <circle cx="50" cy="50" r="18" stroke="#f39c12" stroke-width="4" fill="white"/>
+                </svg>
+            </div>
+            <h2 class="haggadah-font text-4xl text-red-900 font-bold mb-8 text-center">🥯 החור שבבייגל</h2>
+
             <div class="story-box bg-orange-50/30 border-orange-100">
                 <h3 class="text-2xl font-bold mb-4 text-orange-800">📖 החור שבבייגל</h3>
                 <p class="text-lg">
@@ -176,8 +188,8 @@
             </div>
         </div>
 
-        <!-- Page 4: Exodus -->
-        <div id="page4" class="page-content">
+        <!-- Page 5: Exodus -->
+        <div id="page5" class="page-content">
             <div class="flex justify-center mb-6">
                 <svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 30C20 10 40 50 60 30C80 10 100 50 120 30" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
@@ -214,8 +226,8 @@
             </div>
         </div>
 
-        <!-- Page 5: Memory -->
-        <div id="page5" class="page-content">
+        <!-- Page 6: Memory -->
+        <div id="page6" class="page-content">
             <div class="flex justify-center mb-6">
                 <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="50" r="40" stroke="#95a5a6" stroke-width="2"/>
@@ -252,8 +264,8 @@
             <p class="text-3xl font-bold text-center mt-10 text-red-900">🍷 🍷 שותים כוס שניה</p>
         </div>
 
-        <!-- Page 6: State & Democracy -->
-        <div id="page6" class="page-content">
+        <!-- Page 7: State & Democracy -->
+        <div id="page7" class="page-content">
             <div class="flex justify-center mb-6">
                 <svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 60Q60 80 110 60V20L60 40L10 20V60Z" fill="#34495e"/>
@@ -297,8 +309,8 @@
             </div>
         </div>
 
-        <!-- Page 7: Family -->
-        <div id="page7" class="page-content">
+        <!-- Page 8: Family -->
+        <div id="page8" class="page-content">
             <div class="flex justify-center mb-6">
                 <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="45" width="60" height="40" rx="4" fill="#e67e22" opacity="0.2"/>
@@ -354,6 +366,7 @@
             <span class="progress-dot" id="dot5"></span>
             <span class="progress-dot" id="dot6"></span>
             <span class="progress-dot" id="dot7"></span>
+            <span class="progress-dot" id="dot8"></span>
         </div>
         
         <button onclick="changePage(1)" id="nextBtn" class="px-8 py-3 bg-red-900 text-white rounded-full font-bold shadow-md hover:bg-red-800 transition">הבא</button>
@@ -365,7 +378,7 @@
 
     <script>
         let currentPage = 1;
-        const totalPages = 7;
+        const totalPages = 8;
 
         function changePage(delta) {
             const newPage = currentPage + delta;
